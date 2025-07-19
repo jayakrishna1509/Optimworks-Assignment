@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Link{
+    text-decoration: none;
+    color: #000;
+}
+.link{
+    text-decoration: none;
+}
+.careersContainer{
+    display: flex;
+    justify-content: center;
+}
+.btnLinks{
+    text-decoration: none;
+    color: #fff;
+}
+.admin{
+    display: flex;
+    flex-direction: column;
+}
+.top-buttons{
+    display: flex;
+    gap: 1rem;
+    align-self: flex-end;
+}
+

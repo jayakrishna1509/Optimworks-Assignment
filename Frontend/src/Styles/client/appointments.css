@@ -1,0 +1,166 @@
+.appointments-wrapper {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.appointments-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.appointment-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    flex: 1 1 60%;
+    gap: 20px;
+}
+
+.doctor-img {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+.appointment-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.doctor-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.specialization {
+    margin: 4px 0;
+    font-style: italic;
+    color: #444;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    border: 1px solid #aaa;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background: #f2f2f2;
+}
+
+.cancel {
+    color: red;
+    border-color: red;
+}
+.no-appointments {
+    text-align: center;
+    margin-top: 50px;
+    color: #2c2c2c;
+}
+
+.no-appointments-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.no-appointments h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.no-appointments p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.book-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #5a4dbf;
+}
+
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+
+.status-badge.yellow {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+.status-badge.red {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.status-badge.green {
+    background-color: #2ecc71;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .appointment-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-section {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .doctor-img {
+        width: 80px;
+        height: 80px;
+    }
+}
